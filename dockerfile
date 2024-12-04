@@ -16,4 +16,8 @@ RUN pip install requests
 # Juan
 RUN pip install rasterstats pygadm plotly
 RUN pip install contextily pygris scipy tabulate pysal splot
+
+# Copy project files into the image
+ADD . /AIR_QUALITY
+
 CMD ["/init"]
